@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --ink: #172b2a;
+  --paper: #f5f3eb;
+  --moss: #526b57;
+  --coral: #d66b4c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+::selection {
+  background: #dce7d8;
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid #d66b4c;
+  outline-offset: 3px;
+}
